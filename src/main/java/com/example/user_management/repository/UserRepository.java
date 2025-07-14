@@ -1,0 +1,11 @@
+package com.example.user_management.repository;
+
+import com.example.user_management.entity.UserApp;
+import org.springframework.data.repository.CrudRepository;
+
+import java.util.Optional;
+
+public interface UserRepository extends CrudRepository<UserApp, Long> {
+
+    Optional<UserApp> findUsername(String username);
+}
