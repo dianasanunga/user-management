@@ -2,13 +2,13 @@ package com.example.user_management.dto;
 
 public class LoginRequest {
     private String user;
-    private String pasword;
+    private String password;
     public LoginRequest(){
     }
 
-    public LoginRequest(String user, String pasword) {
+    public LoginRequest(String user, String password) {
         this.user = user;
-        this.pasword = pasword;
+        this.password = password;
     }
 
     public String getUser() {
@@ -19,11 +19,11 @@ public class LoginRequest {
         this.user = user;
     }
 
-    public String getPasword() {
-        return pasword;
+    public String getPassword() {
+        return password;
     }
 
-    public void setPasword(String pasword) {
-        this.pasword = pasword;
+    public void setPassword(String password) {
+        this.password = password;
     }
 }

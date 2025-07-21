@@ -27,10 +27,10 @@ public class LoginService {
                 if (savedUserApp.getPassword().equals(password)) {
                     return new ResponseEntity<>(new LoginResponse("Login Successful"), HttpStatus.OK);
                 } else {
-                    return new ResponseEntity<>( new LoginResponse("Wrong credentials"), HttpStatus.OK);
+                    return new ResponseEntity<>( new LoginResponse("Wrong credentials"), HttpStatus.BAD_REQUEST);
                 }
             } else {
-                return new ResponseEntity<>(new LoginResponse("Wrong credentials"), HttpStatus.OK);
+                return new ResponseEntity<>(new LoginResponse("Wrong credentials"), HttpStatus.BAD_REQUEST);
 
             }
 
