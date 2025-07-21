@@ -3,7 +3,6 @@ package com.example.user_management.entity;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "user")
 
 
 public class UserApp {

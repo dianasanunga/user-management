@@ -31,6 +31,9 @@ public class BootstrapData  implements CommandLineRunner {
         userApp2.setUsername("admi");
         userApp2.setPassword("123456");
 
+        userRepository.save(userApp1);
+        userRepository.save(userApp2);
+
 
     }
 
